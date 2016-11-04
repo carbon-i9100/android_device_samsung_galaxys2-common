@@ -167,13 +167,6 @@
     <!-- Is the device capable of hot swapping an UICC Card -->
     <bool name="config_hotswapCapable">true</bool>
 
-    <!-- Control whether a car dock event should override the default bluetooth
-         audio routing, FORCE_BT_CAR_DOCK, with an analog dock, FORCE_ANALOG_DOCK. -->
-    <bool name="config_forceAnalogCarDock">true</bool>
-
-    <!-- Configuration to support SIM contact batch operation.-->
-    <bool name="config_sim_phonebook_batch_operation">false</bool>
-
     <!-- Screen brightness when dozing. -->
     <integer name="config_screenBrightnessDoze">17</integer>
 
@@ -189,8 +182,4 @@
 
     <!-- Use wakelock for flashlight -->
     <bool name="config_useWakeLockForFlashlight">true</bool>
-
-    <!-- Enable button brightness -->
-    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
-
 </resources>

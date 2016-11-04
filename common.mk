@@ -52,7 +52,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf
 
 # Packages
-PRODUCT_PACKAGES := \
+PRODUCT_PACKAGES += \
     com.android.future.usb.accessory \
     SamsungServiceMode \
     Snap
@@ -72,12 +72,12 @@ PRODUCT_PACKAGES += \
 
 # Audio Packages
 PRODUCT_PACKAGES += \
-    AdvancedDisplay \
     audio.primary.exynos4 \
     audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
-    libaudiohw_legacy
+    libaudiohw_legacy \
+    libyamaha-mc1n2-audio
 
 # HAL
 PRODUCT_PACKAGES += \

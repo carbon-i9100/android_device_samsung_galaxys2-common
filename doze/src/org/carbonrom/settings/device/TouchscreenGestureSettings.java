@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.settings.device;
+package org.carbonrom.settings.device;
 
-import org.cyanogenmod.internal.util.ScreenType;
+import org.carbonrom.settings.util.ScreenType;
 
 import android.app.ActionBar;
 import android.os.Bundle;

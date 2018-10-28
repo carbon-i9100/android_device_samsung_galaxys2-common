@@ -133,7 +133,7 @@ BOARD_MODEM_TYPE := xmm6260
 BOARD_RIL_CLASS := ../../../device/samsung/galaxys2-common/ril
 
 # Key disabler
-JAVA_SOURCE_OVERLAYS := org.lineageos.keydisabler|$(DEVICE_PATH)/keydisabler|**/*.java
+JAVA_SOURCE_OVERLAYS := org.carbonrom.keydisabler|$(DEVICE_PATH)/keydisabler|**/*.java
 
 # Camera
 BOARD_CAMERA_HAVE_ISO := true

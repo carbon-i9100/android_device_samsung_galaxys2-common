@@ -173,5 +173,8 @@ WITH_LINEAGE_CHARGER := false
 # Override healthd HAL
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.exynos4
 
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_PHONY_TARGETS := true
+
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/galaxys2-common/BoardConfigVendor.mk

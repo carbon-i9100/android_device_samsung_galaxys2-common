@@ -164,9 +164,6 @@
          so that applications can still use their own mechanisms. -->
     <bool name="config_enableAutoPowerModes">true</bool>
 
-    <!-- Configuration to support SIM contact batch operation.-->
-<!--    <bool name="config_sim_phonebook_batch_operation">false</bool>-->
-
     <!-- Screen brightness when dozing. -->
     <integer name="config_screenBrightnessDoze">17</integer>
 

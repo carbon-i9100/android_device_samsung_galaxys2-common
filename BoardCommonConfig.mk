@@ -173,9 +173,6 @@ BOARD_CUSTOM_BOOTIMG_MK := device/samsung/galaxys2-common/shbootimg.mk
 BOARD_USES_FULL_RECOVERY_IMAGE := true
 WITH_LINEAGE_CHARGER := false
 
-# Override healthd HAL
-BOARD_HAL_STATIC_LIBRARIES := libhealthd.exynos4
-
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_PHONY_TARGETS := true
 

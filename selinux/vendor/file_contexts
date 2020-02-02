@@ -89,3 +89,7 @@
 
 /sys/devices/virtual/sec/sec_key(/.*)?                           u:object_r:sysfs_sec_key:s0
 /sys/devices/virtual/sec/sec_touchkey(/.*)?                      u:object_r:sysfs_sec_touchkey:s0
+
+
+# Current CPU temperature via s5p-tmu
+/sys/devices/platform/s5p-tmu/curr_temp				u:object_r:sysfs_s5p-tmu_curr_temp:s0

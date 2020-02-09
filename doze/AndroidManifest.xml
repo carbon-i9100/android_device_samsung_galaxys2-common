@@ -10,6 +10,8 @@
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
+    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
+
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="21"/>
@@ -31,8 +33,8 @@
 
         <activity
             android:name=".SamsungDozeActivity"
-            android:label="@string/screen_gestures_panel_title"
-            android:theme="@style/SamsungDozeSettings">
+            android:label="@string/ambient_display_title"
+            android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="org.carbonrom.settings.device.DOZE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />

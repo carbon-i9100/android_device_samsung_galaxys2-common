@@ -62,9 +62,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
 
 # Gps
-PRODUCT_PACKAGES := \
-    gps.conf \
-    sirfgps.conf
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/sirfgps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sirfgps.conf
 
 # Packages
 PRODUCT_PACKAGES := \

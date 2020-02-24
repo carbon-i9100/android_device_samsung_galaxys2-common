@@ -20,6 +20,7 @@ echo -n "OK to build and flash Magisk on your device (y/N)?"
 read USERINPUT
 case $USERINPUT in
  y|Y)
+	echo "Setting up the build environment..."
 	cd ../../../..
 	source build/envsetup.sh
 	lunch carbon_i9100-userdebug
@@ -46,10 +47,7 @@ case $USERINPUT in
 	adb pull /sdcard1/boot.img.magisk
 	abootimg -x boot.img.magisk
 	adb shell rm /sdcard1/boot.img.magisk
-	rm ramdisk.cpio
-	rm bootimg.cfg
-	rm boot.img.magisk
-	rm zImage
+	rm ramdisk.cpio bootimg.cfg boot.img.magisk zImage
 	mv initrd.img ramdisk.cpio
 	echo "Extracting modified Magisk-ramdisk from /dev/block/mmcblk0p5... Done!"
 	echo ""
